@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact Us</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navigation -->
+<header>
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="Invest in you logo" ></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+								<a class="nav-link" href="index.html">Home</a>
+							</li>
+					<li class="nav-item">
+						<a class="nav-link" href="procrastination.html">Procrastination</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="time.html">Time</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="discipline.html">Discipline</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="ContactUs.html">Contact Us</a>
+					</li>
+				</ul>
+			</div>
+	</div>
+</nav>
+</header>
+<section>
+    <div class="container-fluid padding">
+		<div class="row title text-center">
+			<div class="col-12">
+				<h1 class= "display-2">Contact Us</h1>
+			</div>
+			<hr>
+		</div>
+	</div>
+</section>	
+
+    <div class="container col-8">
+        <h4 class="mb-3">Invest in U</h4>
+    	<form class="needs-validation" novalidate>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="firstName">First name</label>
+                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Valid first name is required.
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="lastName">Last name</label>
+                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Valid last name is required.
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="email">Email</label>
+              <div class="input-group">
+                <input type="text" class="form-control" id="email" placeholder="you@example.com" required>
+                <div class="invalid-feedback" style="width: 100%;">
+                  Your email address is required.
+                </div>
+              </div>
+			</div>
+
+			<div class="mb-3">
+				<label for="message">Message</label>
+				<div class="input-group">
+					<textarea class="form-control" id="message" required></textarea>
+				  <div class="invalid-feedback" style="width: 100%;">
+					Please type your question
+				  </div>
+				</div>
+			</div>
+			
+            <div class="mb-3">
+			<button class="btn btn-primary btn-lg btn-block" type="submit">Submit</button>
+			</div>
+    	</form>
+    </div>
+<!--- Footer -->
+<footer>
+	<div class="container-fluid padding">
+	<div class="row text-center">
+		<div class="col-md-4">
+			<hr class="light">
+			<h5>InvestInU</h5>
+			<hr class="light">
+			<p>555-555-5555</p>
+			<p>email@myemail.com</p>
+			<p>Main Street</p>
+			<p>City, State, 00000</p>
+		</div>
+		<div class="col-md-4">
+			<hr class="light">
+			<h5>Our Hours</h5>
+			<hr class="light">
+			<p>Monday: 9am to 7pm</p>
+			<p>Saturday: 8am to 12pm</p>
+			<p>Sunday: closed</p>
+		</div>
+		<div class="col-md-4">
+				<hr class="light">
+				<h5>Service</h5>
+				<hr class="light">
+				<p>City, State, 00000</p>
+				<p>City, State, 00000</p>
+				<p>City, State, 00000</p>
+			</div>
+			<div class="col-12">
+				<hr class="light-100">
+				<h5>&copy; investinyou.byethost22.com</h5>
+			</div>
+	</div>	
+	</div>
+</footer>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+    <script>
+      //JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+    </script>
+</body>
+</html>
